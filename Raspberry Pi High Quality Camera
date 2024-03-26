@@ -1,1 +1,26 @@
+Raspberry Pi High Quality Camera 
 
+How to remove the IR Filter 
+
+Why would you remove the IR Filter? 
+Answer: 
+This is used to reduce the camera’s sensitivity to infrared light. 
+This ensures that outdoor photos look more natural. 
+However, some nature photography can be enhanced with the removal of this filter; the colours of sky, plants, and water can be affected by its removal. 
+The camera can also be used without the filter for night vision in a location that is illuminated with infrared light.
+
+Step 1: Make sure that you want to remove the IR Filter, once removed you cannot put it back in (and if you remove it incorrectly, it can break)
+Step 2: Make sure that you are in a clean and dust-free environment 
+Step 3: Remove the white strip (Take an image of the way it is supposed to go back in) 
+Step 4: Unscrew the two 1.5 mm hex lock keys on the underside of the main circuit board (Do not lose the washers)
+Step 5: There will be some sticky material holding the housing and PCB (will need force to remove, not too much though)
+Step 6: Lift up the board and place it down on a very clean surface. Make sure the sensor does not touch the surface.
+Step 7: Optional, You may try some ways to weaken the adhesive, such as a little isopropyl alcohol and/or heat (~20-30 C). (we did not)
+Step 8: Turn the lens mount around so that it is "looking" upwards and place it on a table.
+Step 9: Now you just take out the filter (can use your nails, pencil, sharp object) be sure not to break it
+Step 10: Filter is now removed
+Step 11: Replace the main housing over the circuit board. Be sure to realign the housing with the gasket, which remains on the circuit board.
+Step 12: The nylon washer prevents damage to the circuit board; apply this washer first. 
+Step 13: Next, fit the steel washer, which prevents damage to the nylon washer.
+Step 14: Screw down the two hex lock keys. As long as the washers have been fitted in the correct order, they do not need to be screwed very tightly.
+Step 15: Now put the white strip in again and you have completed the removal of the IR Filter
