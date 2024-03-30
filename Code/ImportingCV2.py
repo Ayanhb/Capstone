@@ -4,7 +4,7 @@ import time
 import cv2
 
 #setup
-im = plt.imread('computer.jpg')
+im = plt.imread('XXX.jpg')
 fig, ax=plt.subplots(1,2)
 (row, col, channel)= im.shape
 im_gray=np.zeros((row, col, 1))
@@ -23,5 +23,5 @@ ax[0].axis('off')
 ax[0].set_title('RGB')
 ax[1].imshow(im_gray, cmap='gray')
 ax[1].axis('off')
-ax[1].set_title('RGB')
+ax[1].set_title('Grayscale')
 plt.show()
