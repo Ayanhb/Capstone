@@ -1,0 +1,36 @@
+Trying with DNG File calculating the Albedo 
+
+# Specify the name of the image file 
+filename = 'hometest.dng'  # Replace 'hometest.dng' with your DNG file path
+
+# Import the Libraries 
+import numpy as np 
+import matplotlib.pyplot as plt 
+from PIL import Image
+
+# Load & Show the Image 
+img = np.array(Image.open(filename))
+
+plt.figure()
+plt.imshow(img)
+
+# Get the dimensions of the image 
+ny, nx, nz = img.shape
+print('ny,nx = ', ny, nx)
+midptx = int(nx/2)  # middle position (Horizontal)
+midpty = int(ny/2)  # middle position (Vertical)
+
+# Convert the image to grayscale for albedo analysis 
+img_gray = Image.open(filename).convert('L')
+
+# Extract & Plot a Horizontal Slice 
+plt.figure()
+plt.plot(np.array(img_gray)[midpty, :])
+plt.grid(True)
+plt.title('Left-Right Horizontal Slice Through the Middle of The Image')
+
+plt.show()
+
+# Computing the albedo (Can be done with a calculator as well)
+albedo = (.47 - .05) / (.68 - .05)  # Here you use the plot to determine the values you want to compare and then the second part is the whole range 
+print(albedo)
