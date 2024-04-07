@@ -1,0 +1,6 @@
+This is for the DNG and JPG (that has metadata encoded at end of image) using the Raspberry OS 
+
+rpicam-still -r -o test.jpg 
+
+#-r means raw 
+#-o means output 
