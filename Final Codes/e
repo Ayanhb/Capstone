@@ -1,24 +1,21 @@
 import time
 from datetime import datetime
-from gpiozero import Button
-from signal import pause
 from picamera2 import Picamera2, Preview
 
 picam2 = Picamera2()
-button = Button(17)
 
 def capture():
     while True:
         timestamp = datetime.now().isoformat()
         picam2.capture_file('/path/to/folder/%s.jpg' % timestamp)
         time.sleep(7)
-        if button.is_pressed:
-            break
 
 camera_config = picam2.create_still_configuration(main={"size": (1920, 1080)}, lores={"size": (640, 480)}, display="lores")
 picam2.configure(camera_config)
 picam2.start_preview(Preview.QTGL)
 picam2.start()
 
-button.when_pressed = capture
-pause()
+capture()
+
+picam2.stop_preview()
+picam2.stop()
