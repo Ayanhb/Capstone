@@ -40,7 +40,7 @@ def capture():
         timestamp = datetime.now().isoformat()
         picam2.switch_mode_and_capture_file(capture_config, '//home/ayan/Pictures/JPG/%s.jpg' % timestamp, name="main")
         picam2.switch_mode_and_capture_file(capture_config, '//home/ayan/Pictures/DNG/%s.dng' % timestamp, name="raw")
-        time.sleep(7)
+        time.sleep(4)
 
 capture()
 
